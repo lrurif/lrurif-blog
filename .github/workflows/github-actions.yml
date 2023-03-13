@@ -1,0 +1,22 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+    push:
+        branches: [master]
+jobs: # workflows文件主体，可以指定一个或者多个，这里指定了一个job - build-and-deploy
+    build-and-deploy:
+        runs-on: ubuntu-latest # 在最新的ubuntu上运行
+        steps: # 指定每个job的运行步骤
+            - name: executing remote ssh commands
+              # 使用appleboy/ssh-action@master来执行命令
+              uses: appleboy/ssh-action@master
+              with:
+                  host: ${{ secrets.DEPLOY_HOST }}
+                  username: ${{ secrets.DEPLOY_USER }}
+                  password: ${{ secrets.DEPLOY_SECRET }}
+                  script: |
+                    cd /www/server/git-projects/lrurif-blog
+                    npm i
+                    npm run docs:build
+                    rm -rf /www/server/web/lrurif-blog/*
+                    mv /www/server/git-projects/lrurif-blog/dist/* /www/server/web/lrurif-blog/
