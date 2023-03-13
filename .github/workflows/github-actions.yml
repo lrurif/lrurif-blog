@@ -15,7 +15,7 @@ jobs: # workflows文件主体，可以指定一个或者多个，这里指定了
                   username: ${{ secrets.DEPLOY_USER }}
                   password: ${{ secrets.DEPLOY_SECRET }}
                   script: |
-                    nvm use v16.10.0
+                    nvm use v16.15.0
                     cd /www/server/git-projects/lrurif-blog
                     git pull
                     npm i
