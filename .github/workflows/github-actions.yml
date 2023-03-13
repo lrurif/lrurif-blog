@@ -16,6 +16,7 @@ jobs: # workflows文件主体，可以指定一个或者多个，这里指定了
                   password: ${{ secrets.DEPLOY_SECRET }}
                   script: |
                     cd /www/server/git-projects/lrurif-blog
+                    git pull
                     npm i
                     npm run docs:build
                     rm -rf /www/server/web/lrurif-blog/*
