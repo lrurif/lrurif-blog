@@ -5,17 +5,18 @@ layout: home
 hero:
   name: "lrurif"
   text: "fang’s blog"
-  tagline: My great project tagline
+  tagline: fang的blog
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 案例1
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 案例2
       link: /api-examples
 
 features:
-  - title: Feature A
+  - icon: 🛠️
+    title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
