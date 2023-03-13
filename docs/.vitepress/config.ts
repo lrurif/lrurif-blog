@@ -14,6 +14,7 @@ export default defineConfig({
             { text: "首页", link: "/" },
             { text: "案例", link: "/markdown-examples" },
             { text: "前端导览", link: "/front-end/javascript/types" },
+            { text: "可视化", link: "/graphics/svg/stroke-animation" },
         ],
         sidebar: {
             "/Examples/": [
@@ -39,6 +40,17 @@ export default defineConfig({
                     ],
                 },
             ],
+            "/graphics/": [
+              {
+                text: "SVG",
+                items: [
+                    {
+                        text: "stroke-dasharray和stroke-dashoffset理解",
+                        link: "/graphics/svg/stroke-animation",
+                    },
+                ],
+            },
+            ]
         },
         socialLinks: [{ icon: "github", link: "https://github.com/lrurif" }],
         footer: {
