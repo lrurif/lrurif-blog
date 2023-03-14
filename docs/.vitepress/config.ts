@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import { nav, head, sidebar } from "./setting/index"
-export const BASE_URL = "/lrurif-blog/"
+import { BASE_URL } from "./setting/setting"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     outDir: "../dist",
