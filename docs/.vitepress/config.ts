@@ -1,9 +1,10 @@
 import { defineConfig } from "vitepress";
 import { nav, head, sidebar } from "./setting/index"
+export const BASE_URL = "/lrurif-blog/"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     outDir: "../dist",
-    base: "/lrurif-blog/",
+    base: BASE_URL,
     cleanUrls: true,
     title: "lrurif",
     lastUpdated: true,
