@@ -11,7 +11,7 @@ hero:
           link: /front-end/javascript/types
         - theme: alt
           text: 可视化
-          link: /graphics
+          link: /graphics/svg/stroke-animation
 
 features:
     - icon: 📖

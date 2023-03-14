@@ -11,7 +11,7 @@ export const nav: DefaultTheme.Config["nav"] = [
             },
             {
                 text: "HTML",
-                link: "/front-end/javascript/types",
+                link: "/front-end/html/semantization",
             },
         ],
     },

@@ -5,8 +5,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             text: "JavaScript基础知识",
             items: [
                 {
-                    text: "类型",
+                    text: "JavaScript类型",
                     link: "/front-end/javascript/types",
+                },
+            ],
+        },
+        {
+            text: "HTML",
+            items: [
+                {
+                    text: "HTML语义化",
+                    link: "/front-end/html/semantization",
                 },
             ],
         },
