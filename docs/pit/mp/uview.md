@@ -1,0 +1,1 @@
+1. u-transition组件中如果内部组件position为absolute的话，会导致动画失效，此时需要才去其他定位。

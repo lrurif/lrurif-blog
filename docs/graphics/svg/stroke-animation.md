@@ -1,3 +1,6 @@
+---
+title: "stroke"
+---
 # 我终于知道了svg中stroke-dasharray和stroke-dashoffset如何计算了！！！
 
 ## 理解
