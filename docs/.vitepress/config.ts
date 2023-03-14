@@ -2,14 +2,19 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    outDir: '../dist',
+    outDir: "../dist",
     base: "/lrurif-blog/",
     cleanUrls: true,
     title: "F",
     description: "fang’s blog",
     themeConfig: {
-      logo: 'https://img2.baidu.com/it/u=4002314442,3709471545&fm=253&fmt=auto&app=138&f=JPEG?w=531&h=500',
+        logo: "https://img2.baidu.com/it/u=4002314442,3709471545&fm=253&fmt=auto&app=138&f=JPEG?w=531&h=500",
         // https://vitepress.dev/reference/default-theme-config
+        /* 右侧大纲配置 */
+        outline: {
+            level: "deep",
+            label: "本页目录",
+        },
         nav: [
             { text: "首页", link: "/" },
             { text: "案例", link: "/markdown-examples" },
@@ -41,22 +46,21 @@ export default defineConfig({
                 },
             ],
             "/graphics/": [
-              {
-                text: "SVG",
-                items: [
-                    {
-                        text: "stroke-dasharray和stroke-dashoffset理解",
-                        link: "/graphics/svg/stroke-animation",
-                    },
-                ],
-            },
-            ]
+                {
+                    text: "SVG",
+                    items: [
+                        {
+                            text: "stroke-dasharray和stroke-dashoffset理解",
+                            link: "/graphics/svg/stroke-animation",
+                        },
+                    ],
+                },
+            ],
         },
         socialLinks: [{ icon: "github", link: "https://github.com/lrurif" }],
         footer: {
-          message: '如有转载或 CV 的请标注本站原文地址',
-          copyright: 'Copyright © 2023-present lrurif'
+            message: "如有转载或 CV 的请标注本站原文地址",
+            copyright: "Copyright © 2023-present lrurif",
         },
-    
     },
 });

@@ -6,9 +6,9 @@
 
 
 ![1001678461341_.pic_hd.jpg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/72ca180bce6a4580b0146d21b982a101~tplv-k3u1fbpfcp-watermark.image?)
-#### 首先来一张文档里面的图，哈哈哈，是不是看了都头疼。
 
 ## 实际规则
+**首先来一张文档里面的图，哈哈哈，是不是看了都头疼。**
 ![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f08b3cd29c69450bbea71f809787c1b6~tplv-k3u1fbpfcp-watermark.image?)
 
 翻译一下：  
