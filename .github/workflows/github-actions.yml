@@ -19,6 +19,6 @@ jobs: # workflows文件主体，可以指定一个或者多个，这里指定了
                     cd /www/server/git-projects/lrurif-blog
                     git pull
                     npm i
-                    npm run docs:build
+                    npm run build
                     rm -rf /www/server/web/lrurif-blog/*
                     mv /www/server/git-projects/lrurif-blog/dist/* /www/server/web/lrurif-blog/
