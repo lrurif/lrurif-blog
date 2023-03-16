@@ -15,6 +15,15 @@ export const nav: DefaultTheme.Config["nav"] = [
             },
         ],
     },
+    {
+        text: "前端工程化",
+        items: [
+            {
+                text: "Git",
+                link: "/engineering/git/tag",
+            }
+        ],
+    },
     { text: "踩坑记录", link: "/pit/mp/uview" },
     { text: "可视化", link: "/graphics/svg/stroke-animation" },
 ]

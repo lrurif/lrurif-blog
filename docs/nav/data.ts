@@ -7,7 +7,7 @@ type NavData = {
 
 export const NAV_DATA: NavData[] = [
     {
-        title: "官网",
+        title: "常用官网",
         items: [
             {
                 icon: "https://cn.vuejs.org/logo.svg",
