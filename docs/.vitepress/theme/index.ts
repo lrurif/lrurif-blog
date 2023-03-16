@@ -10,7 +10,6 @@ export default {
     const props: Record<string, any> = {}
     // 获取 frontmatter
     const { frontmatter } = useData()
-    console.log(frontmatter.value);
     /* 添加自定义 class */
     if (frontmatter.value?.layoutClass) {
       props.class = frontmatter.value.layoutClass
