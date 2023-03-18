@@ -24,6 +24,10 @@ export const nav: DefaultTheme.Config["nav"] = [
             }
         ],
     },
+    {
+        text: "源码阅读",
+        link: "/source-code-read/js/arrify"
+    },
     { text: "踩坑记录", link: "/pit/mp/uview" },
     { text: "可视化", link: "/graphics/svg/stroke-animation" },
 ]

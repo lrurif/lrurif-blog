@@ -8,6 +8,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
                     text: "JavaScript类型",
                     link: "/front-end/javascript/types",
                 },
+                {
+                    text: "Iterator和Generator详解",
+                    link: "/front-end/javascript/iterator",
+                },
             ],
         },
         {
@@ -32,14 +36,29 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         },
     ],
     "/pit/": [
-      {
-        text: "小程序",
-        items: [
-          {
-            text: "uview的坑",
-            link: "/pit/mp/uview"
-          }
-        ]
-      }
-    ]
+        {
+          text: "小程序",
+          items: [
+            {
+              text: "uview的坑",
+              link: "/pit/mp/uview"
+            }
+          ]
+        }
+      ],
+      "/source-code-read/": [
+        {
+          text: "工具类",
+          items: [
+            {
+              text: "arrify",
+              link: "/source-code-read/js/arrify"
+            },
+            {
+                text: "launch-editor-middleware",
+                link: "/source-code-read/tools/launch-editor-middleware"
+            }
+          ]
+        }
+      ]
 }
