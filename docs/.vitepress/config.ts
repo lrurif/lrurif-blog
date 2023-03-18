@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { nav, head, sidebar } from "./setting/index"
 import { BASE_URL } from "./setting/setting"
+import mdItCustomAttrs  from 'markdown-it-custom-attrs'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     outDir: "../dist",
@@ -30,4 +31,11 @@ export default defineConfig({
             copyright: "Copyright © 2023-present lrurif",
         },
     },
+    markdown: {
+        config: (md) => {
+            md.use(mdItCustomAttrs, 'image', {
+                'data-fancybox': "gallery"
+            })
+        }
+    }
 });
