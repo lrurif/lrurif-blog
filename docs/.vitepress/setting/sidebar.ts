@@ -57,6 +57,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             {
                 text: "launch-editor-middleware",
                 link: "/source-code-read/tools/launch-editor-middleware"
+            },
+            {
+                text: "vue3源码之工具函数",
+                link: "/source-code-read/tools/vue3-tools"
             }
           ]
         }

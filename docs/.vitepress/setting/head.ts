@@ -5,6 +5,7 @@ export const head: HeadConfig[] = [
     ["meta", { name: "description", content: "方的博客" }],
     ["meta", { name: "keywords", content: "blog,front-end" }],
     ["link", { rel: "icon", href: `${BASE_URL}favicon.ico` }],
+    // 引入图片放大插件
     ["link",{rel: "stylesheet",href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"}],
     ["script",{src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"}],
 ];
