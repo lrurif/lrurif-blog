@@ -9,7 +9,6 @@
 ![image.png](./images/data-proxy-2.png)
 
 3. 在`new Vue`之前可以打上`debugger`，之后打开浏览器可进行调试。
-<a name="fdPOv"></a>
 ##  调试
 <a name="vLXww"></a>
 ### vue构造函数

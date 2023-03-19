@@ -17,9 +17,9 @@ jobs: # workflows文件主体，可以指定一个或者多个，这里指定了
                   script: |
                     nvm use v16.15.0
                     cd /www/server/git-projects/lrurif-blog
+                    git checkout .
                     git pull
                     npm i
-                    git checkout .
                     npm run build
                     rm -rf /www/server/web/lrurif-blog/*
                     mv /www/server/git-projects/lrurif-blog/dist/* /www/server/web/lrurif-blog/
