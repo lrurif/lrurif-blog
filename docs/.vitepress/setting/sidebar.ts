@@ -61,6 +61,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
             {
                 text: "vue3源码之工具函数",
                 link: "/source-code-read/tools/vue3-tools"
+            },
+            {
+              text: "vue2中this如何能够直接拿到data和methods?",
+              link: "/source-code-read/vue/data-proxy"
             }
           ]
         }
