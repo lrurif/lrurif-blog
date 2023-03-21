@@ -1,4 +1,4 @@
-<a name="LHtLU"></a>
+# arrify源码解读
 ## 源码库介绍
 一个将值转化为数组的一个库
 <a name="yka35"></a>

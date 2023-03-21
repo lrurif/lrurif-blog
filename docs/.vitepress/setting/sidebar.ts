@@ -1,5 +1,5 @@
-import type { DefaultTheme } from "vitepress"
-export const sidebar: DefaultTheme.Config['sidebar'] = {
+import type { DefaultTheme } from "vitepress";
+export const sidebar: DefaultTheme.Config["sidebar"] = {
     "/front-end/": [
         {
             text: "JavaScript基础知识",
@@ -37,36 +37,67 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     ],
     "/pit/": [
         {
-          text: "小程序",
-          items: [
-            {
-              text: "uview的坑",
-              link: "/pit/mp/uview"
-            }
-          ]
-        }
-      ],
-      "/source-code-read/": [
+            text: "小程序",
+            items: [
+                {
+                    text: "uview的坑",
+                    link: "/pit/mp/uview",
+                },
+            ],
+        },
+    ],
+    "/source-code-read/": [
         {
-          text: "工具类",
-          items: [
+            text: "工具类",
+            items: [
+                {
+                    text: "arrify",
+                    link: "/source-code-read/js/arrify",
+                },
+                {
+                    text: "launch-editor-middleware",
+                    link: "/source-code-read/tools/launch-editor-middleware",
+                },
+                {
+                    text: "vue3源码之工具函数",
+                    link: "/source-code-read/tools/vue3-tools",
+                },
+                {
+                    text: "vue2中this如何能够直接拿到data和methods?",
+                    link: "/source-code-read/vue/data-proxy",
+                },
+            ],
+        },
+    ],
+    "/tips/": [
+      {
+        text: "node.js",
+        items: [
             {
-              text: "arrify",
-              link: "/source-code-read/js/arrify"
+                text: "node小技巧",
+                link: "/tips/node/run-path",
             },
-            {
-                text: "launch-editor-middleware",
-                link: "/source-code-read/tools/launch-editor-middleware"
-            },
-            {
-                text: "vue3源码之工具函数",
-                link: "/source-code-read/tools/vue3-tools"
-            },
-            {
-              text: "vue2中this如何能够直接拿到data和methods?",
-              link: "/source-code-read/vue/data-proxy"
-            }
-          ]
+        ],
+    },
+    ],
+    "/algorithm/": [
+        {
+            text: "递归",
+            items: [
+                {
+                    text: "递归三部曲",
+                    link: "/algorithm/递归三部曲",
+                },
+            ],
+        },
+        {
+            text: "回溯",
+            items: [
+                {
+                    text: "回溯模板",
+                    link: "/algorithm/回溯模板",
+                },
+            ],
         }
-      ]
-}
+    ]
+};

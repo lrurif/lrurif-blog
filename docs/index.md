@@ -28,4 +28,9 @@ features:
       details: 可视化小只因识
       link: /graphics/svg/stroke-animation
       linkText: 数据可视化
+    - icon: 💡
+      title: 小技巧
+      details: 前端小技巧
+      link: /tips/node/run-path
+      linkText: 前端小技巧
 ---

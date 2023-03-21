@@ -25,6 +25,10 @@ export const nav: DefaultTheme.Config["nav"] = [
         ],
     },
     {
+        text: "算法",
+        link: "/algorithm/递归三部曲",
+    },
+    {
         text: "源码阅读",
         link: "/source-code-read/js/arrify"
     },
