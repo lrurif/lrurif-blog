@@ -23,6 +23,19 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                 },
             ],
         },
+        {
+            text: "CSS",
+            items: [
+                {
+                    text: "Grid布局",
+                    link: "/front-end/css/grid",
+                },
+                {
+                    text: "BFC",
+                    link: "/front-end/css/bfc",
+                },
+            ],
+        },
     ],
     "/graphics/": [
         {

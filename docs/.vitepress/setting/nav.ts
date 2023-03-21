@@ -6,12 +6,16 @@ export const nav: DefaultTheme.Config["nav"] = [
         text: "前端导览",
         items: [
             {
-                text: "JavaScript",
-                link: "/front-end/javascript/types",
-            },
-            {
                 text: "HTML",
                 link: "/front-end/html/semantization",
+            },
+            {
+                text: "CSS",
+                link: "/front-end/css/grid",
+            },
+            {
+                text: "JavaScript",
+                link: "/front-end/javascript/types",
             },
         ],
     },
