@@ -38,8 +38,43 @@ export const NAV_DATA: NavData[] = [
                 title: "Element Plus",
                 desc: "基于 Vue 3，面向设计师和开发者的组件库",
                 link:"https://element-plus.gitee.io/zh-CN/"
+            },
+            {
+                icon: "https://cn.vuejs.org/logo.svg",
+                title: "Vue Router",
+                desc: "Vue.js 的官方路由",
+                link:"https://router.vuejs.org/zh/"
+            },
+            {
+                icon: "https://cn.vuejs.org/logo.svg",
+                title: "Vuex",
+                desc: "Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 + 库。",
+                link:"https://vuex.vuejs.org/zh/"
+            },
+            {
+                icon: "https://flutter.cn/assets/images/cn/flutter-icon.png",
+                title: "Flutter",
+                desc: "Flutter 开发文档",
+                link:"https://flutter.cn/docs"
             }
         ],
+    },
+    {
+        title: "文章以及问答网站",
+        items: [
+            {
+                icon: "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/favicon-32x32.png",
+                title: "掘金",
+                desc: "稀土掘金",
+                link: "https://juejin.cn/", 
+            },
+            {
+                icon: "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196",
+                title: "stack overflow",
+                desc: "stack overflow",
+                link: "https://stackoverflow.com/", 
+            }
+        ]
     },
     {
         title: "小程序",
