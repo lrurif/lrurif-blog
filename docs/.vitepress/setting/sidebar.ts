@@ -36,6 +36,19 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                 },
             ],
         },
+        {
+            text: "Flutter",
+            items: [
+                {
+                    text: "Flutter的坑",
+                    link: "/front-end/flutter/issue",
+                },
+                {
+                    text: "Flutter打包",
+                    link: "/front-end/flutter/build",
+                },
+            ],
+        },
     ],
     "/graphics/": [
         {

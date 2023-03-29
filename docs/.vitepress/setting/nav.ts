@@ -17,6 +17,10 @@ export const nav: DefaultTheme.Config["nav"] = [
                 text: "JavaScript",
                 link: "/front-end/javascript/types",
             },
+            {
+                text: "Flutter",
+                link: "/front-end/flutter/issue",
+            },
         ],
     },
     {
