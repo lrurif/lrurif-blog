@@ -56,6 +56,11 @@ export const NAV_DATA: NavData[] = [
                 title: "Flutter",
                 desc: "Flutter 开发文档",
                 link:"https://flutter.cn/docs"
+            },
+            {
+                icon: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+                title: "Ant Design",
+                link: "https://ant-design.gitee.io/index-cn"
             }
         ],
     },
