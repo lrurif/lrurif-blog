@@ -60,6 +60,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                 },
             ],
         },
+        {
+            text: "小技巧",
+            items: [
+                {
+                    text: "可视化小技巧",
+                    link: "/graphics/tips/",
+                },
+            ],
+        },
     ],
     "/pit/": [
         {
