@@ -60,9 +60,22 @@ export const NAV_DATA: NavData[] = [
             {
                 icon: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
                 title: "Ant Design",
+                desc: "Ant Design",
+
                 link: "https://ant-design.gitee.io/index-cn"
             }
         ],
+    },
+    {
+        title: "动画",
+        items: [
+            {
+                icon: "https://animejs.com/documentation/assets/img/favicon.png",
+                title: "animejs",
+                desc: "JavaScript animation engine",
+                link: "https://animejs.com/", 
+            }
+        ]
     },
     {
         title: "文章以及问答网站",
@@ -119,6 +132,12 @@ export const NAV_DATA: NavData[] = [
                 desc: "JSON 在线解析及格式化验证",
                 link: "https://www.json.cn",
             },
+            {
+                icon: "https://www.bootcdn.cn/assets/ico/favicon.ico?1680365789217",
+                title: "BootCDN",
+                desc: "稳定、快速、免费的前端开源项目 CDN 加速服务",
+                link: "https://www.bootcdn.cn/"
+            }
         ],
     },
     {
