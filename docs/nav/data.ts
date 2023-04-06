@@ -98,10 +98,16 @@ export const NAV_DATA: NavData[] = [
         title: "小程序",
         items: [
             {
-                icon: "https://caniuse.com/img/favicon-128.png",
-                title: "Can I use",
-                desc: "前端 API 兼容性查询",
-                link: "https://caniuse.com", 
+                icon: "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico",
+                title: "微信小程序开发文档",
+                desc: "微信小程序开发文档",
+                link: "https://developers.weixin.qq.com/miniprogram/dev/framework/", 
+            },
+            {
+                icon: "https://i.alipayobjects.com/common/favicon/favicon.ico",
+                title: "支付宝小程序开发文档",
+                desc: "支付宝小程序开发文档",
+                link: "https://opendocs.alipay.com/mini", 
             }
         ]
     },
