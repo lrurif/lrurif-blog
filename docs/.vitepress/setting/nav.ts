@@ -18,6 +18,10 @@ export const nav: DefaultTheme.Config["nav"] = [
                 link: "/front-end/javascript/types",
             },
             {
+                text: "动画",
+                link: "/front-end/animation/animejs",
+            },
+            {
                 text: "Flutter",
                 link: "/front-end/flutter/issue",
             },

@@ -37,6 +37,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
             ],
         },
         {
+            text: "动画",
+            items: [
+                {
+                    text: "animejs的使用",
+                    link: "/front-end/animation/animejs",
+                },
+            ],
+        },
+        {
             text: "Flutter",
             items: [
                 {
