@@ -114,15 +114,33 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
         },
     ],
     "/tips/": [
-      {
-        text: "node.js",
-        items: [
-            {
-                text: "node小技巧",
-                link: "/tips/node/run-path",
-            },
-        ],
-    },
+        {
+            text: "一些简单的方法",
+            items: [
+                {
+                    text: "一些简单的方法",
+                    link: "/tips/simple-methods/",
+                },
+            ],
+        },
+        {
+            text: "node.js",
+            items: [
+                {
+                    text: "node小技巧",
+                    link: "/tips/node/run-path",
+                },
+            ],
+        },
+        {
+            text: "日常",
+            items: [
+                {
+                    text: "日常",
+                    link: "/tips/daily/normal",
+                },
+            ],
+        },
     ],
     "/algorithm/": [
         {

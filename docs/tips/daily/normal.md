@@ -1,5 +1,5 @@
-# 小提示
-## vscode中output栏和终端栏用的Dart版本不一致问题
+# 技巧
+## 1、vscode中output栏和终端栏用的Dart版本不一致问题
 ### 原因
 如果在 VSCode 的 Output 窗口中看到的 Dart 版本与终端中的版本不同，可能是因为 VSCode 使用的是自己的 Dart SDK 路径而不是您在终端中使用的路径。这通常是因为您在 VSCode 中使用的 Dart 插件配置了自己的 SDK 路径。
 ### 解决办法

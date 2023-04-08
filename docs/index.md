@@ -31,6 +31,6 @@ features:
     - icon: 💡
       title: 小技巧
       details: 前端小技巧
-      link: /tips/node/run-path
+      link: /tips/simple-methods/
       linkText: 前端小技巧
 ---
