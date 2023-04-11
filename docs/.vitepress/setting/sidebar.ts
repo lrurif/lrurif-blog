@@ -58,6 +58,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                 },
             ],
         },
+        {
+            text: "浏览器",
+            items: [
+                {
+                    text: "HTML渲染的一些结论",
+                    link: "/front-end/browser/HTML渲染",
+                },
+            ],
+        },
     ],
     "/graphics/": [
         {
@@ -66,6 +75,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                 {
                     text: "stroke-dasharray和stroke-dashoffset理解",
                     link: "/graphics/svg/stroke-animation",
+                },
+            ],
+        },
+        {
+            text: "THREE",
+            items: [
+                {
+                    text: "THREE学习",
+                    link: "/graphics/three/learning",
                 },
             ],
         },
@@ -161,5 +179,5 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                 },
             ],
         }
-    ]
+    ],
 };
