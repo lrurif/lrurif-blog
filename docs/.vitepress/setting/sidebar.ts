@@ -34,6 +34,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                     text: "BFC",
                     link: "/front-end/css/bfc",
                 },
+                {
+                    text: "行内元素的动画",
+                    link: "/front-end/css/span-animation",
+                },
             ],
         },
         {
