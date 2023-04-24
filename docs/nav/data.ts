@@ -143,6 +143,12 @@ export const NAV_DATA: NavData[] = [
                 title: "BootCDN",
                 desc: "稳定、快速、免费的前端开源项目 CDN 加速服务",
                 link: "https://www.bootcdn.cn/"
+            },
+            {
+                icon: "https://npmtrends.com/images/logos/npm_trends_logo.png",
+                title: "npm trends",
+                desc: "npm趋势图",
+                link: "https://npmtrends.com/"
             }
         ],
     },
@@ -166,6 +172,12 @@ export const NAV_DATA: NavData[] = [
                 title: "three.js",
                 desc: "JavaScript 3D library",
                 link: "https://threejs.org/",
+            },
+            {
+                icon: "https://www.poliigon.com/favicon.ico",
+                title: "POLIIGON",
+                desc: "一个免费以及收费的建模下载网站",
+                link: "https://www.poliigon.com/"
             }
         ]
     }
