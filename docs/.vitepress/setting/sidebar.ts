@@ -132,6 +132,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                     text: "vue2中this如何能够直接拿到data和methods?",
                     link: "/source-code-read/vue/data-proxy",
                 },
+                {
+                    text: "nextTick 简单实现",
+                    link: "/source-code-read/vue/nextTick",
+                },
             ],
         },
     ],
