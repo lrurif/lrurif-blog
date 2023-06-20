@@ -26,10 +26,6 @@ export default defineConfig({
         nav,
         sidebar,
         socialLinks: [{ icon: "github", link: "https://github.com/lrurif" }],
-        footer: {
-            message: "如有转载或 CV 的请标注本站原文地址",
-            copyright: "Copyright © 2023-present lrurif",
-        },
     },
     markdown: {
         config: (md) => {

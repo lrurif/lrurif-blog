@@ -4,6 +4,7 @@ import { useData } from 'vitepress'
 import Theme from 'vitepress/theme'
 import './style.css'
 // import DocBefore from "../components/docBefore.vue"
+import Footer from "../components/Footer.vue"
 export default {
   ...Theme,
   Layout: () => {
@@ -15,6 +16,7 @@ export default {
       props.class = frontmatter.value.layoutClass
     }
     return h(Theme.Layout, props, {
+      'layout-bottom': () => h(Footer)
       // "doc-before": () => h(DocBefore)
     })
   },
