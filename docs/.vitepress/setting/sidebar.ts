@@ -103,6 +103,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
     ],
     "/pit/": [
         {
+            text: "JS",
+            items: [
+                {
+                    text: "js中toFixed的坑",
+                    link: "/pit/js/toFixed",
+                },
+            ],
+        },
+        {
             text: "小程序",
             items: [
                 {
