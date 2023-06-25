@@ -109,6 +109,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                     text: "js中toFixed的坑",
                     link: "/pit/js/toFixed",
                 },
+                {
+                    text: "navigator.clipboard的坑",
+                    link: "/pit/js/clipboard",
+                },
             ],
         },
         {

@@ -46,4 +46,5 @@ export const nav: DefaultTheme.Config["nav"] = [
     },
     { text: "踩坑记录", link: "/pit/js/toFixed" },
     { text: "可视化", link: "/graphics/svg/stroke-animation" },
+    { text: "小技巧", link: "/tips/simple-methods/" },
 ]
