@@ -38,6 +38,14 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                     text: "行内元素的动画",
                     link: "/front-end/css/span-animation",
                 },
+                {
+                    text: "box-shadow实现拟态风格样式",
+                    link: "/front-end/css/box-shadow",
+                },
+                {
+                    text: "实现一个手电筒照亮效果",
+                    link: "/front-end/css/light",
+                },
             ],
         },
         {
