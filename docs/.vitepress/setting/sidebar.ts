@@ -157,6 +157,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                     text: "nextTick 简单实现",
                     link: "/source-code-read/vue/nextTick",
                 },
+                {
+                    text: "剖析 element-ui 中新建组件的命令",
+                    link: "/source-code-read/tools/element-ui-new",
+                },
             ],
         },
     ],
