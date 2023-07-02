@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev docs --host --open",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "new": "node ./bin/new.js"
   },
   "keywords": [],
   "author": "",

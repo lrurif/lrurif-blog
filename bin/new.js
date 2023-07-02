@@ -17,10 +17,11 @@ const result = ts.transpileModule(code, {
     }
 });
 const exports = {};
+// 获取sidebar内容
 eval(result.outputText);
 const { sidebar } = exports;
 
-// 输出 JavaScript 字符串
+// 获取所有类别，目前只支持二级分类
 function getAllCate(data) {
     let res = [];
     for (let key in data) {
@@ -29,7 +30,7 @@ function getAllCate(data) {
     return res;
 }
 const allCate = getAllCate(sidebar);
-
+// 定义一些问题
 const questions = [
     {
         type: 'list',
@@ -58,6 +59,7 @@ const questions = [
     },
 ];
 inquirer.prompt(questions).then(async ({ cate, filename, title }) => {
+    // 获取用户所选类别项
     let cateItem = allCate.find(item => item.text.toLowerCase() == cate.toLowerCase());
     let link = cateItem?.items?.[0].link;
     let pathArr = link.split("/");
@@ -67,12 +69,16 @@ inquirer.prompt(questions).then(async ({ cate, filename, title }) => {
         text: title,
         link: filePath,
     });
+    // 将sidebar.ts内容写入 -start
     const templateText = `import type { DefaultTheme } from "vitepress";
     export const sidebar: DefaultTheme.Config["sidebar"] = ${JSON.stringify(sidebar, null, '    ')}`;
     fs.writeFileSync(sidebarPath, templateText);
+    // 将sidebar.ts内容写入 -end
+    // 新建文件
     const filePathUrl = path.join(dirname, `../docs${filePath}.md`);
     fs.writeFileSync(filePathUrl, `# ${title}`);
     console.log(`新建文档成功，文件路径为：${filePathUrl}`);
+    // 新建文件
     try{
         await execa('code', [filePathUrl]);
         console.log("自动打开文件成功，请开始写博客吧");
