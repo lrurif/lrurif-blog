@@ -119,4 +119,10 @@
 .dark .vp-doc .custom-block a {
   transition: color 0.25s;
 }
-
+.vp-doc :not(pre) > code {
+  color: #ff502c;
+  background-color: #fff5f5;
+}
+.dark .vp-doc :not(pre) > code {
+  background-color: hsla(0,0%,100%,0.08);
+}

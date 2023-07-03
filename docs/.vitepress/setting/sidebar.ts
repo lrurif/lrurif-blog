@@ -124,6 +124,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
             ],
         },
         {
+            text: "CSS",
+            items: [
+                {
+                    text: "transform-origin引发的坑",
+                    link: "/pit/css/transform-origin-pit",
+                },
+            ],
+        },
+        {
             text: "小程序",
             items: [
                 {
