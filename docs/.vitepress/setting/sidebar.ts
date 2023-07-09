@@ -170,6 +170,10 @@ export const sidebar: DefaultTheme.Config["sidebar"] = {
                     text: "剖析 element-ui 中新建组件的命令",
                     link: "/source-code-read/tools/element-ui-new",
                 },
+                {
+                    text: "koa-compose源码",
+                    link: "/source-code-read/js/koa-compose",
+                },
             ],
         },
     ],
