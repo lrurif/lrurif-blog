@@ -105,6 +105,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "可视化小技巧",
                     "link": "/graphics/tips/"
+                },
+                {
+                    "text": "echarts如何自定义图形",
+                    "link": "/graphics/tips/echarts-custom"
                 }
             ]
         }
