@@ -108,7 +108,7 @@ grid-auto-flow: unset;
 * grid-row-end：下边框所在水平网格线
 ![网格线定义](./images/grid-2.png "网格线定义")
 ### grid-area属性
-上方`grid-template-areas`中有提及它的作用。
+上方<a href="#grid-template-areas属性">`grid-template-areas`</a>中有提及它的作用。
 ### justify-self、align-self以及place-self属性。
 justify-self属性设置单元格内容的水平位置，只作用于自身。  
 align-self属性设置单元格内容的垂直位置，只作用于自身。  

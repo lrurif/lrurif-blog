@@ -84,7 +84,6 @@ inquirer.prompt(questions).then(async ({ cate, filename, title }) => {
         console.log("自动打开文件成功，请开始写博客吧");
     }catch(e){
         console.log("自动打开文件失败");
-
         console.log(e, 'error');
     }
 });
