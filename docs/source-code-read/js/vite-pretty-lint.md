@@ -1,5 +1,6 @@
 # 如何一键为 vite 项目添加 eslint 和 prettier
 
+解析`vite-pretty-lint`这个库，此库的功能是为vite创建项目添加`eslint`和`prettier`配置。
 ## 准备工作
 
 ```zsh
