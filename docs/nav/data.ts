@@ -149,6 +149,12 @@ export const NAV_DATA: NavData[] = [
                 title: "npm trends",
                 desc: "npm趋势图",
                 link: "https://npmtrends.com/"
+            },
+            {
+                icon: "https://astexplorer.net/favicon.png",
+                title: "在线ast转换器",
+                desc: "一个ast转换器",
+                link: "https://astexplorer.net/"
             }
         ],
     },
