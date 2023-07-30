@@ -185,6 +185,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "如何一键为vite项目添加eslint和prettier",
                     "link": "/source-code-read/js/vite-pretty-lint"
+                },
+                {
+                    "text": "classnames源码解读",
+                    "link": "/source-code-read/js/classnames"
                 }
             ]
         }
