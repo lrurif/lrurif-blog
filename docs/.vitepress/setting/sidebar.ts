@@ -76,6 +76,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "HTML渲染的一些结论",
                     "link": "/front-end/browser/HTML渲染"
+                },
+                {
+                    "text": "浏览器调试-替换代码",
+                    "link": "/front-end/browser/replace-code"
                 }
             ]
         }
@@ -241,5 +245,20 @@ import type { DefaultTheme } from "vitepress";
                 }
             ]
         }
+    ],
+    "/engineering/": [
+        {
+            "text": "git",
+            "items": [
+                {
+                    "text": "Git中Tag的使用",
+                    "link": "/engineering/git/tag"
+                },
+                {
+                    "text": "记录一次git瘦身",
+                    "link": "/engineering/git/clean"
+                }
+            ]
+        },
     ]
 }

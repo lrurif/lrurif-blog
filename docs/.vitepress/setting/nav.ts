@@ -25,6 +25,10 @@ export const nav: DefaultTheme.Config["nav"] = [
                 text: "Flutter",
                 link: "/front-end/flutter/issue",
             },
+            {
+                text: "浏览器",
+                link: "/front-end/browser/HTML渲染",
+            },
         ],
     },
     {
