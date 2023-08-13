@@ -193,6 +193,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "classnames源码解读",
                     "link": "/source-code-read/js/classnames"
+                },
+                {
+                    "text": "co源码阅读",
+                    "link": "/source-code-read/js/co"
                 }
             ]
         }
@@ -259,6 +263,6 @@ import type { DefaultTheme } from "vitepress";
                     "link": "/engineering/git/clean"
                 }
             ]
-        },
+        }
     ]
 }
