@@ -197,6 +197,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "co源码阅读",
                     "link": "/source-code-read/js/co"
+                },
+                {
+                    "text": "vuex",
+                    "link": "/source-code-read/js/vuex"
                 }
             ]
         }
