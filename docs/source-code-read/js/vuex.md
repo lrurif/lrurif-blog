@@ -12,7 +12,7 @@ npm i
 
 `vue2`使用`Vue.mixin`，给`beforeCreate`的生命周期里面混入`vuexInit`方法，判断`$options`上是否存在`store`对象，或者获取父组件的`$store`。  
 `vue1`使用重新`_init`方法来解决。
- 关键代码:
+关键代码:
 
 ```javascript
 let Vue; // bind on install
@@ -76,7 +76,7 @@ function vuexInit() {
     5. 遍历 modules 对象，并递归执行 installModule。
 4. 执行 resetStoreVM 方法：初始化 Vue 实例，使 state 以及 getters 变成响应式
     1. 获取老的 vm 实例
-    2. 遍历\_wrappedGetters，将 computed 对象填充为一个个函数，并定义 store.getters 中属性的 get 方法，使其等于 vm 的属性。
+    2. 遍历_wrappedGetters，将 computed 对象填充为一个个函数，并定义 store.getters 中属性的 get 方法，使其等于 vm 的属性。
     3. 实例一个 vue 实例，data 指向 state，computed 指向上一步所定义的函数对象。
     4. 如果老的 vm 实例存在，则在下一个事件循环中销毁。
 5. 遍历 options 中的 plugins，并使 store 作为实参传入函数执行。
@@ -388,5 +388,93 @@ export class Store {
     }
 }
 ```
+
 ## 辅助函数解析
-待续
+
+### mapState 解析
+
+```javascript
+export const mapState = normalizeNamespace((namespace, states) => {
+    const res = {};
+    // 如果states不是对象或者数组
+    if (__DEV__ && !isValidMap(states)) {
+        console.error(
+            "[vuex] mapState: mapper parameter must be either an Array or an Object"
+        );
+    }
+    // 统一入参并遍历
+    normalizeMap(states).forEach(({ key, val }) => {
+        res[key] = function mappedState() {
+            let state = this.$store.state;
+            let getters = this.$store.getters;
+            // 如果第一个参数指定了命名空间，例如mapState("app", ["name"])
+            if (namespace) {
+                // 获取命名空间下的module
+                const module = getModuleByNamespace(
+                    this.$store,
+                    "mapState",
+                    namespace
+                );
+                if (!module) {
+                    return;
+                }
+                // 将state赋值为context下的state
+                state = module.context.state;
+                // 将getters赋值为context下的getters
+                getters = module.context.getters;
+            }
+            // 如果为函数的话，则传入state以及getters，并执行
+            return typeof val === "function"
+                ? val.call(this, state, getters)
+                : state[val];
+        };
+        // mark vuex getter for devtools
+        res[key].vuex = true;
+    });
+    return res;
+});
+```
+
+### mapMutations解析
+
+```javascript
+export const mapMutations = normalizeNamespace((namespace, mutations) => {
+    const res = {};
+    // 检验对象或数组
+    if (__DEV__ && !isValidMap(mutations)) {
+        console.error(
+            "[vuex] mapMutations: mapper parameter must be either an Array or an Object"
+        );
+    }
+    // 统一入参并遍历
+    normalizeMap(mutations).forEach(({ key, val }) => {
+        res[key] = function mappedMutation(...args) {
+            // Get the commit method from store
+            let commit = this.$store.commit;
+            // 如果存在命名空间的话，则获取module下的commit方法
+            if (namespace) {
+                const module = getModuleByNamespace(
+                    this.$store,
+                    "mapMutations",
+                    namespace
+                );
+                if (!module) {
+                    return;
+                }
+                commit = module.context.commit;
+            }
+            // 如果为函数，则第一个参数出入commit并执行
+            return typeof val === "function"
+                ? val.apply(this, [commit].concat(args))
+                : commit.apply(this.$store, [val].concat(args));
+        };
+    });
+    return res;
+});
+```
+### mapGetters解析（和state类似，除了不能传入函数）
+### mapActions(和mapMutations类似)
+
+## 总结
+1. install方法保存Vue构造函数，并用beforeCreate生命周期注入$store,之后可以应用到自己开发的vue库中。
+2. 着重理解上下文，可以针对不同的模块存储不同的上下文（vuex中的context对象），并针对每个上下文存储不同的属性函数，例如vuex中的state、getters属性，commit函数。
