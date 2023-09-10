@@ -115,6 +115,15 @@ import type { DefaultTheme } from "vitepress";
                     "link": "/graphics/tips/echarts-custom"
                 }
             ]
+        },
+        {
+            "text": "d3",
+            "items": [
+                {
+                    "text": "d3绘制地图",
+                    "link": "/graphics/d3/map"
+                }
+            ]
         }
     ],
     "/pit/": [
