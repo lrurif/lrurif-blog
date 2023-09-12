@@ -80,6 +80,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "浏览器调试-替换代码",
                     "link": "/front-end/browser/replace-code"
+                },
+                {
+                    "text": "style对domcontentloaded的影响",
+                    "link": "/front-end/browser/style对domcontentloaded的影响"
                 }
             ]
         }
