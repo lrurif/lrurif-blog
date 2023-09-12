@@ -1,6 +1,6 @@
 # style外部标签对domcontentloaded的影响
-## 当外部style标签放到head中，（没有外部script）
-当外部style标签放到head中，（没有外部script），不阻塞DOMContentLoaded执行。
+## 当外部style标签放到head中，（没有script）
+当外部style标签放到head中，不阻塞DOMContentLoaded执行。
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -18,8 +18,8 @@
 </html>
 ```
 ![](./images/style-1.png)
-## 当外部style标签放到body中，（没有外部script）
-当外部style标签放到body中，（没有外部script），会阻塞DOMContentLoaded执行。
+## 当外部style标签放到body中或body后，（没有script）
+当外部style标签放到body中或body后，会阻塞DOMContentLoaded执行。
 ```html
 <!DOCTYPE html>
 <html lang="en">
