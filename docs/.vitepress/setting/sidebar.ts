@@ -45,6 +45,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "实现一个手电筒照亮效果",
                     "link": "/front-end/css/light"
+                },
+                {
+                    "text": "position: sticky的理解",
+                    "link": "/front-end/css/sticky"
                 }
             ]
         },
