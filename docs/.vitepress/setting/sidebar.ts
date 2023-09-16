@@ -163,6 +163,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "uview的坑",
                     "link": "/pit/mp/uview"
+                },
+                {
+                    "text": "微信小程序web-view通信的坑",
+                    "link": "/pit/mp/微信小程序web-view通信"
                 }
             ]
         }
