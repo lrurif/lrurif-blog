@@ -154,6 +154,10 @@ import type { DefaultTheme } from "vitepress";
                 {
                     "text": "transform-origin引发的坑",
                     "link": "/pit/css/transform-origin-pit"
+                },
+                {
+                    "text": "父元素flex布局，子元素scale缩放引发的坑",
+                    "link": "/pit/css/flex-scale-pit"
                 }
             ]
         },
