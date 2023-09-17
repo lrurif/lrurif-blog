@@ -51,7 +51,16 @@ function fitReisze(resizeDom, changeDom, options = {
             changeDom.style.width = `${width}px`;
             changeDom.style.height = `${height}px`;
             // 设置缩放
-            changeDom.style.transform = `scale(${setWidth / width})`;
+            let transformStyle = getComputedStyle(changeDom).transform;
+            let scale = setWidth / width;
+            // 如果样式没有设置过transform
+            if(transformStyle === 'none') {
+                changeDom.style.transform = `scale(${scale})`;
+            }else {
+                const origin = transformStyle.match(/^matrix\((.*)\)$/)[1].split(",");
+                origin[0] = origin[3] = scale;
+                changeDom.style.transform = `matrix(${origin.join(",")})`
+            }
             return;
         }
         changeDom.style.width = `${setWidth}px`;
