@@ -90,6 +90,19 @@ import type { DefaultTheme } from "vitepress";
                     "link": "/front-end/browser/style对domcontentloaded的影响"
                 }
             ]
+        },
+        {
+            "text": "其他",
+            "items": [
+                {
+                    "text": "数字无限滚动组件",
+                    "link": "/front-end/other/num-infinite-scroll"
+                },
+                {
+                    "text": "简单的虚拟列表组件",
+                    "link": "/front-end/other/simple-virtual-scroll"
+                },
+            ]
         }
     ],
     "/graphics/": [

@@ -29,6 +29,10 @@ export const nav: DefaultTheme.Config["nav"] = [
                 text: "浏览器",
                 link: "/front-end/browser/HTML渲染",
             },
+            {
+                text: "其他",
+                link: "/front-end/other/num-infinite-scroll",
+            },
         ],
     },
     {
