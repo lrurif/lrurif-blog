@@ -186,6 +186,15 @@ import type { DefaultTheme } from "vitepress";
                     "link": "/pit/mp/微信小程序web-view通信"
                 }
             ]
+        },
+        {
+            "text": "node.js",
+            "items": [
+                {
+                    "text": "上传文件的坑",
+                    "link": "/pit/nodejs/upload"
+                },
+            ]
         }
     ],
     "/source-code-read/": [
