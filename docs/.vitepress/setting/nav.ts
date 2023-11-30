@@ -1,7 +1,19 @@
 import type { DefaultTheme } from "vitepress";
 export const nav: DefaultTheme.Config["nav"] = [
     { text: "首页", link: "/" },
-    {text: "导航", link: "/nav/main"},
+    {
+        text: "导航",
+        items: [
+            {
+                text: "常用网站",
+                link: "/nav/main",
+            },
+            {
+                text: "常用库",
+                link: "/nav/collect-lib",
+            }
+        ]
+    },
     {
         text: "前端导览",
         items: [
@@ -55,4 +67,5 @@ export const nav: DefaultTheme.Config["nav"] = [
     { text: "踩坑记录", link: "/pit/js/toFixed" },
     { text: "可视化", link: "/graphics/svg/stroke-animation" },
     { text: "小技巧", link: "/tips/simple-methods/" },
+    { text: "收藏的库", link: "/collect-lib/" },
 ]

@@ -188,3 +188,27 @@ export const NAV_DATA: NavData[] = [
         ]
     }
 ];
+
+type libList = {
+    title: string,
+    list: LibData[]
+}
+type LibData = {
+    title: string,
+    icon?: string
+    link: string
+    desc: string
+}
+export const LIB_LIST: libList[] = [
+    {
+        title: "UI构建库",
+        list: [
+            {
+                title: "Vue",
+                icon: "",
+                desc: "",
+                link: "",
+            }
+        ]
+    }
+]
