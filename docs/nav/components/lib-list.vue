@@ -1,12 +1,17 @@
 <script lang="ts" setup>
-import LibItem from "./lib-item.vue"
-defineProps({
-    title: String,
-    list: Array,
-})
+import LibItem from "./lib-item.vue";
+import type { LibData } from "../data";
+defineProps<{
+  title: string;
+  list: LibData[];
+}>();
 </script>
 <template>
-    <div>{{ title }}</div>
-    <!-- <a class="header-anchor" :href="`#${formatTitle}`" aria-hidden="true">#</a> -->
-    <LibItem v-for="item in list" v-bind="item"></LibItem>
+  <div>
+    <h2 v-if="title" :id="title" tabindex="-1">
+      {{ title }}
+      <a class="header-anchor" :href="`#${title}`" aria-hidden="true">#</a>
+    </h2>
+    <LibItem v-for="item in list" v-bind="item" :key="item.title"></LibItem>
+  </div>
 </template>

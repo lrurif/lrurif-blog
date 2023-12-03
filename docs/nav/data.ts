@@ -189,15 +189,20 @@ export const NAV_DATA: NavData[] = [
     }
 ];
 
-type libList = {
+export type libList = {
     title: string,
     list: LibData[]
 }
-type LibData = {
+export type LibData = {
     title: string,
     icon?: string
     link: string
     desc: string
+    labels?: label[]
+}
+export type label = {
+    name: string,
+    link: string
 }
 export const LIB_LIST: libList[] = [
     {
@@ -205,10 +210,29 @@ export const LIB_LIST: libList[] = [
         list: [
             {
                 title: "Vue",
-                icon: "",
-                desc: "",
-                link: "",
+                icon: "https://www.bootcdn.cn/assets/img/m-vue.png",
+                desc: "Vue 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。",
+                link: "https://cn.vuejs.org/",
+                labels: [
+                    {
+                        name: "npm",
+                        link: "https://www.npmjs.com/package/vue"
+                    },
+                ]
+            },
+            {
+                title: "React",
+                icon: "https://www.bootcdn.cn/assets/img/m-react.png",
+                desc: "React 是用于构建用户界面的 JavaScript 工具库。",
+                link: "https://zh-hans.react.dev/",
+                labels: [
+                    {
+                        name: "npm",
+                        link: "https://www.npmjs.com/package/react"
+                    },
+                ]
             }
         ]
-    }
+    },
+
 ]
