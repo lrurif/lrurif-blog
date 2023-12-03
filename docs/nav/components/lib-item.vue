@@ -23,7 +23,7 @@ defineProps<{
       >
     </div>
     <div class="lib-item-right">
-      {{ desc }}
+      {{ desc }} 
     </div>
   </a>
 </template>
