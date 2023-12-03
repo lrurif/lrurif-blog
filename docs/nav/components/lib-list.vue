@@ -12,6 +12,6 @@ defineProps<{
       {{ title }}
       <a class="header-anchor" :href="`#${title}`" aria-hidden="true">#</a>
     </h2>
-    <LibItem v-for="item in list" v-bind="item" :key="item.title"></LibItem>
+    <Lib-item v-for="item in list" v-bind="item" :key="item.title"></Lib-item>
   </div>
 </template>
