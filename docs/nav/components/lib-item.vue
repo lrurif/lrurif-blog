@@ -9,23 +9,25 @@ defineProps<{
 }>();
 </script>
 <template>
-  <a class="lib-item-wrapper" :href="link" target="_blank">
-    <div class="lib-item-left">
-      <img v-if="icon" :src="icon" class="icon" />
-      <h4 class="title">{{ title }}</h4>
-      <a
-        v-for="item in labels"
-        class="label"
-        :href="item.link"
-        target="_blank"
-        :key="item.name"
-        >{{ item.name }}</a
-      >
-    </div>
-    <div class="lib-item-right">
-      {{ desc }} 
-    </div>
-  </a>
+  <div>
+    <a class="lib-item-wrapper" :href="link" target="_blank">
+      <div class="lib-item-left">
+        <img v-if="icon" :src="icon" class="icon" />
+        <h4 class="title">{{ title }}</h4>
+        <a
+          v-for="item in labels"
+          class="label"
+          :href="item.link"
+          target="_blank"
+          :key="item.name"
+          >{{ item.name }}</a
+        >
+      </div>
+      <div class="lib-item-right">
+        {{ desc }}
+      </div>
+    </a>
+  </div>
 </template>
 <style scoped lang="scss">
 $colors: #99f8ff, #badc58, #f0932b, #f6e58d, #ffbe76, #ff7979, #f9ca24;
