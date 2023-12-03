@@ -28,7 +28,7 @@ defineProps<{
   </a>
 </template>
 <style scoped lang="scss">
-$colors: #f6e58d, #ffbe76, #ff7979, #badc58, #dff9fb, #f9ca24, #f0932b;
+$colors: #99f8ff, #badc58, #f0932b, #f6e58d, #ffbe76, #ff7979, #f9ca24;
 .lib-item-wrapper {
   padding: 25px 20px;
   display: flex;
@@ -69,7 +69,7 @@ $colors: #f6e58d, #ffbe76, #ff7979, #badc58, #dff9fb, #f9ca24, #f0932b;
         opacity: 0.8;
       }
       @for $i from 1 through length($colors) {
-        &:nth-child(#{$i}) {
+        &:nth-of-type(#{$i}) {
           background: nth($colors, $i);
         }
       }
