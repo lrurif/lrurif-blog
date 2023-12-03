@@ -31,31 +31,31 @@ export const NAV_DATA: NavData[] = [
                 icon: "https://element.eleme.cn/favicon.ico",
                 title: "Element UI",
                 desc: "Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的桌面端组件库",
-                link:"https://element.eleme.cn/#/zh-CN"
+                link: "https://element.eleme.cn/#/zh-CN"
             },
             {
                 icon: "https://element-plus.gitee.io/images/element-plus-logo-small.svg",
                 title: "Element Plus",
                 desc: "基于 Vue 3，面向设计师和开发者的组件库",
-                link:"https://element-plus.gitee.io/zh-CN/"
+                link: "https://element-plus.gitee.io/zh-CN/"
             },
             {
                 icon: "https://cn.vuejs.org/logo.svg",
                 title: "Vue Router",
                 desc: "Vue.js 的官方路由",
-                link:"https://router.vuejs.org/zh/"
+                link: "https://router.vuejs.org/zh/"
             },
             {
                 icon: "https://cn.vuejs.org/logo.svg",
                 title: "Vuex",
                 desc: "Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 + 库。",
-                link:"https://vuex.vuejs.org/zh/"
+                link: "https://vuex.vuejs.org/zh/"
             },
             {
                 icon: "https://flutter.cn/assets/images/cn/flutter-icon.png",
                 title: "Flutter",
                 desc: "Flutter 开发文档",
-                link:"https://flutter.cn/docs"
+                link: "https://flutter.cn/docs"
             },
             {
                 icon: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
@@ -73,7 +73,7 @@ export const NAV_DATA: NavData[] = [
                 icon: "https://animejs.com/documentation/assets/img/favicon.png",
                 title: "animejs",
                 desc: "JavaScript animation engine",
-                link: "https://animejs.com/", 
+                link: "https://animejs.com/",
             }
         ]
     },
@@ -84,13 +84,13 @@ export const NAV_DATA: NavData[] = [
                 icon: "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/favicon-32x32.png",
                 title: "掘金",
                 desc: "稀土掘金",
-                link: "https://juejin.cn/", 
+                link: "https://juejin.cn/",
             },
             {
                 icon: "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196",
                 title: "stack overflow",
                 desc: "stack overflow",
-                link: "https://stackoverflow.com/", 
+                link: "https://stackoverflow.com/",
             }
         ]
     },
@@ -101,13 +101,13 @@ export const NAV_DATA: NavData[] = [
                 icon: "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico",
                 title: "微信小程序开发文档",
                 desc: "微信小程序开发文档",
-                link: "https://developers.weixin.qq.com/miniprogram/dev/framework/", 
+                link: "https://developers.weixin.qq.com/miniprogram/dev/framework/",
             },
             {
                 icon: "https://i.alipayobjects.com/common/favicon/favicon.ico",
                 title: "支付宝小程序开发文档",
                 desc: "支付宝小程序开发文档",
-                link: "https://opendocs.alipay.com/mini", 
+                link: "https://opendocs.alipay.com/mini",
             }
         ]
     },
@@ -234,5 +234,20 @@ export const LIB_LIST: libList[] = [
             }
         ]
     },
-
+    {
+        title: "node命令行库",
+        list: [
+            {
+                title: "chalk",
+                desc: "终端颜色字体插件",
+                link: "https://www.npmjs.com/package/chalk",
+                labels: [
+                    {
+                        name: "npm",
+                        link: "https://www.npmjs.com/package/chalk"
+                    },
+                ]
+            }
+        ]
+    }
 ]
